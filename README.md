@@ -1,15 +1,15 @@
-# Nkaaf Git-profiles
+# Homebrew Taps by nkaaf
 
 ## How do I install these formulae?
 
-`brew install nkaaf/git-profiles/<formula>`
+`brew install nkaaf/tap/<formula>`
 
-Or `brew tap nkaaf/git-profiles` and then `brew install <formula>`.
+Or `brew tap nkaaf/tap` and then `brew install <formula>`.
 
 Or, in a `brew bundle` `Brewfile`:
 
 ```ruby
-tap "nkaaf/git-profiles"
+tap "nkaaf/tap"
 brew "<formula>"
 ```
 
