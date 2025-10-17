@@ -1,4 +1,4 @@
-class NkaafGitProfiles < Formula
+class GitProfiles < Formula
   include Language::Python::Virtualenv
 
   desc "Managing Git profiles systemwide"
@@ -8,7 +8,7 @@ class NkaafGitProfiles < Formula
   license "Apache-2.0"
 
   bottle do
-    root_url "https://github.com/nkaaf/homebrew-git-profiles/releases/download/nkaaf-git-profiles-0.1.0"
+    root_url "https://github.com/nkaaf/homebrew-tap/releases/download/nkaaf-git-profiles-0.1.0"
     sha256 cellar: :any,                 arm64_tahoe:  "c79228194c117ac01a46d36ff06950ebd4c3655ac65c94f58a1efff01b58af9f"
     sha256 cellar: :any_skip_relocation, x86_64_linux: "484a9c650db6797fdf3d30fbc15b9d9cfc9ddafa78e0260afde166196c6fe6a7"
   end
