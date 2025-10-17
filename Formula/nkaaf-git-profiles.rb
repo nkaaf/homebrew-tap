@@ -7,6 +7,12 @@ class NkaafGitProfiles < Formula
   sha256 "53b291eadaba0084b25473bfc4ef42b803bc174d893c31ec57eb7c5c1740ed92"
   license "Apache-2.0"
 
+  bottle do
+    root_url "https://github.com/nkaaf/homebrew-git-profiles/releases/download/nkaaf-git-profiles-0.1.0"
+    sha256 cellar: :any,                 arm64_tahoe:  "c79228194c117ac01a46d36ff06950ebd4c3655ac65c94f58a1efff01b58af9f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "484a9c650db6797fdf3d30fbc15b9d9cfc9ddafa78e0260afde166196c6fe6a7"
+  end
+
   depends_on "rust" => :build # for pydantic-core
   depends_on "python@3.14"
 
