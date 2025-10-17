@@ -7,6 +7,13 @@ class GitProfiles < Formula
   sha256 "53b291eadaba0084b25473bfc4ef42b803bc174d893c31ec57eb7c5c1740ed92"
   license "Apache-2.0"
 
+  bottle do
+    root_url "https://github.com/nkaaf/homebrew-tap/releases/download/git-profiles-0.1.0"
+    rebuild 1
+    sha256 cellar: :any,                 arm64_tahoe:  "aafcfd7e105caebfe258a1197d70ca872b17848469dd05b3e8950ea1cb3ce3f9"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "42a84bf29343d42c9b1588c529a60f9a9b3b2080d1d414702b0453ba6ee9f3b6"
+  end
+
   depends_on "rust" => :build # for pydantic-core
   depends_on "python@3.14"
 
