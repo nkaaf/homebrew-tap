@@ -3,7 +3,7 @@ class GitProfiles < Formula
 
   desc "Managing Git profiles systemwide"
   homepage "https://github.com/nkaaf/git-profiles"
-  url "https://github.com/nkaaf/git-profiles/archive/refs/tags/0.2.0.tar.gz"
+  url "https://github.com/nkaaf/git-profiles/archive/refs/tags/0.3.0.tar.gz"
   sha256 "4f77affc236f0791543a4c097a06143f7b75adfb814c97e58751c4cfb6df560b"
   license "Apache-2.0"
 
@@ -57,6 +57,6 @@ class GitProfiles < Formula
 
   test do
     output = shell_output("#{bin}/git-profiles version")
-    assert_match "0.2.0", output
+    assert_match "0.3.0", output
   end
 end
